@@ -26,7 +26,7 @@ class AppUserRepositoryTest {
     @BeforeEach
     void setUp() {
         mongoTemplate
-                .insert(new AppUser(VALID_USERNAME,"{noop}valid_password"))
+                .insert(new AppUser(VALID_USERNAME, "{noop}valid_password"))
                 .block();
     }
 
